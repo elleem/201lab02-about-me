@@ -3,5 +3,24 @@ html {
 }
 
 body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url('https://www.j4s8.de/img/20161218120905.jpg');
+}
+
+header,
+footer {
+  margin-top:37px;
+  padding: 0 20px;
+  text-align:center;
+}
+
+main {
+  margin: 10px auto;
+  width:450px;
+}
+
+ #borderimg1 {
+  border:10px solid transparent;
+  padding: 15px;
+  border-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/0/00/National_Park_Service_sign.jpg/180px-National_Park_Service_sign.jpg) 30 stretch;
 }
