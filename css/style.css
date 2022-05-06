@@ -5,9 +5,14 @@ html {
 
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-image: url(../img/dv.jpg);
-
+  background-image:url("../img/deathvalleyss.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-color: blue;
 }
+
+
 
 header,
 footer {
@@ -26,7 +31,7 @@ main {
  #borderimg1 {
   border:10px solid transparent;
   padding: 15px;
-  border-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/0/00/National_Park_Service_sign.jpg/180px-National_Park_Service_sign.jpg) 30 stretch;
+  border-image: url('../img/trees.jpg') 30% round;
 }
 
 p {
