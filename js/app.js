@@ -3,8 +3,8 @@
 let user = prompt ('Hello, what is your name?');
 
 
-let intro = prompt ("Welcome to my page " + user +"! Would you like to play a guessing game about my goal to visit all the US National Parks? Please answer yes or no to the next 5 questions.");
-//prompt might do better for the game as an alert
+let intro = alert ("Welcome to my page " + user +"! Welcome to a guessing game about my goal to visit all the US National Parks! Please answer yes or no to the next 5 questions.");
+//prompt might do better for the game as an alert after testing user experience
 function outbound () {
   //revision, combine everyting into one function
   let answer1 = prompt ("Before I visit a National Park do I check out their website and pack the 10 essentials?") ?.toLowerCase();
