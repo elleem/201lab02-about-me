@@ -9,7 +9,7 @@ let intro = alert(
     "! Welcome to a guessing game about my goal to visit all the US National Parks! Please answer yes or no to the next 5 questions."
 );
 //prompt might do better for the game as an alert after testing user experience
-function outbound() {
+
   //revision, combine everyting into one function
   let answer1 = prompt(
     "Before I visit a National Park do I check out their website and pack the 10 essentials?"
@@ -26,10 +26,9 @@ function outbound() {
     alert("Please answer with a (y)es or (n)o");
     //console.log ("Please answer with a yes or no");
   }
-}
-outbound();
 
-function hikingFool() {
+
+
   let answer2 = prompt(
     "Have I visited and hiked in all 3 National Parks in the state of Washington?"
   )?.toLowerCase();
@@ -45,10 +44,9 @@ function hikingFool() {
     //console.log ("Please answer with a yes or no");
     alert("Please answer with a (y)es or (n)o");
   }
-}
-hikingFool();
 
-function snacks() {
+
+
   let answer3 = prompt(
     "Have I visited all the National Parks in Utah?"
   )?.toLowerCase();
@@ -64,10 +62,9 @@ function snacks() {
     //console.log ("Please answer with a yes or no");
     alert("Please answer with a (y)es or (n)o");
   }
-}
-snacks();
 
-function trailMix() {
+
+
   let answer4 = prompt(
     "Have I visited all the National Parks in California?"
   )?.toLowerCase();
@@ -83,10 +80,7 @@ function trailMix() {
     //console.log ("Please answer with a yes or no");
     alert("Please answer with a (y)es or (n)o");
   }
-}
-trailMix();
 
-function compassRose() {
   let answer5 = prompt("Have I visited the Grand Canyon?")?.toLowerCase();
 
   if (answer5 === "yes" || answer5 === "y") {
@@ -100,10 +94,10 @@ function compassRose() {
     //console.log ("Please answer with a yes or no");
     alert("Please answer with a (y)es or (n)o");
   }
-}
-compassRose();
 
-let outro = prompt("Thanks so much " + user + "! Welcome to my page!");
+
+//let outro = prompt("Thanks so much " + user + "! Welcome to my page!");
+//comment out outro due to new questions
 
 let correctAnswer = 27;
 let guesses = 4;
@@ -128,32 +122,36 @@ while (guesses) {
   }
 }
 
-let favParks = [
+const favParks = [
   "Yellowstone",
+  //"yellowstone",
   "Death Valley",
+  //"death valley",
   "Canyonlands",
+  //"canyonlands",
   "Redwoods",
+  //"redwoods",
   "Mount Lassen",
+  //"mount lassen",
 ];
 let parksGuess = 6;
 //let rightPark =favParks for Monday night
 
 while (parksGuess) {
+  
   parksGuess--;
   let favParksQuestions = prompt(
     "What is one of my top favorite National Parks?"
   );
 
-  for (let i = 0; i < favParksQuestions.length; i++) {
-    //const parksGuess = favParks [i];
+  for (let i = 1; i < favParksQuestions.length; i++) {
     //console.log (i,favParks);
     if (favParksQuestions === favParks[i]) {
       alert("Excellent guess!");
-      break;
       playerScore++;
     }
   }
-  if (parksGuess != 0) {
+  else if (parksGuess != 0) {
     alert("Try another one. You have " + parksGuess + " more guesses.");
   } else {
     alert(favParks + " are all of the correct answers!");
