@@ -1,7 +1,7 @@
 "use strict";
 
-// let playerScore = 0;
-// let user = prompt("Hello, what is your name?");
+let playerScore = 0;
+let user = prompt("Hello, what is your name?");
 
 // let intro = alert(
 //   "Welcome to my page " +
@@ -96,8 +96,8 @@
 //   }
 
 
-//let outro = prompt("Thanks so much " + user + "! Welcome to my page!");
-//comment out outro due to new questions
+// //let outro = prompt("Thanks so much " + user + "! Welcome to my page!");
+// //comment out outro due to new questions
 
 // let correctAnswer = 27;
 // let guesses = 4;
@@ -122,38 +122,43 @@
 //   }
 // }
 
-const favParks = [
+
+
+let favParks = [
   "Yellowstone",
   "Death Valley",
   "Canyonlands",
   "Redwoods",
   "Mount Lassen",
 ];
-let parksGuess = 6;
 let correctPark = false;
+let parksGuess = 6;
+
 
 while (parksGuess && !correctPark) {
   
-  parksGuess--;
   let favParksQuestions = prompt(
-    "What is one of my top favorite National Parks?"
-  );
+    "What is one of my top favorite National Parks? You have " + parksGuess + " guesses.");
 
   for (let i = 0; i < favParks.length; i++) {
-    let favPark = favParks[i].toLowerCase(); 
+    let favPark = favParks[i]; 
     //console.log (i,favParks);
-    if (favParksQuestions === favParks[i]) {
+    if (favParksQuestions === favPark) {
       alert("Excellent guess!");
-      correctPark=true;
+      correctPark = true;
       playerScore++;
-    }
+    } 
+
   }
-  if (parksGuess != 0) {
-    alert("Try another one. You have " + parksGuess + " more guesses.");
-  } else {
-    alert(favParks + " are all of the correct answers!");
-  }
+  parksGuess--;
+  // if (parksGuess !== 0) {
+  //   alert("Try another one. You have " + parksGuess + " more guesses.");
+  // } else {
+  //   alert(favParks + " are all of the correct answers!");
+  // }
 }
+
+
 
 alert("Thanks for playing " + user + ". You scored " + playerScore + "!");
 
