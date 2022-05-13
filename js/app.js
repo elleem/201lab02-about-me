@@ -1,23 +1,23 @@
 "use strict";
 
-function fiveQuestions(answer) {
-  answer = answer.toLowerCase();
-  if (answer === "yes") {
-    return true;
-  } else if (answer === "no") {
-    return false;
-  }
-}
-let answer1 = prompt('Before I visit a National Park do I check out their website and pack the 10 essentials?');
-console.log(fiveQuestions(answer1));
-let answer2 = prompt('Have I visited and hiked in all 3 National Parks in the state of Washington?');
-console.log(fiveQuestions(answer2));
-let answer3 = prompt('Have I visited all the National Parks in Utah?');
-console.log(fiveQuestions(answer3));
-let answer4 = prompt('Have I visited all the National Parks in California?');
-console.log(fiveQuestions(answer4));
-let answer5 = prompt('Have I visited the Grand Canyon?');
-console.log(fiveQuestions(answer5));
+// function fiveQuestions(answer) {
+//   answer = answer.toLowerCase();
+//   if (answer === "yes") {
+//     return true;
+//   } else if (answer === "no") {
+//     return false;
+//   }
+// }
+// let answer1 = prompt('Before I visit a National Park do I check out their website and pack the 10 essentials?');
+// console.log(fiveQuestions(answer1));
+// let answer2 = prompt('Have I visited and hiked in all 3 National Parks in the state of Washington?');
+// console.log(fiveQuestions(answer2));
+// let answer3 = prompt('Have I visited all the National Parks in Utah?');
+// console.log(fiveQuestions(answer3));
+// let answer4 = prompt('Have I visited all the National Parks in California?');
+// console.log(fiveQuestions(answer4));
+// let answer5 = prompt('Have I visited the Grand Canyon?');
+// console.log(fiveQuestions(answer5));
 
 // let playerScore = 0;
 // let user = prompt("Hello, what is your name?");
@@ -169,7 +169,7 @@ console.log(fiveQuestions(answer5));
 
 // alert("Thanks for playing " + user + ". You scored " + playerScore + "!");
 
-let parksAnswers = ["yes", "no"];
+let parksAnswers = ["yes", "no",];
 
 let parksQuestions = [
   "Before I visit a National Park do I check out their website and pack the 10 essentials?",
@@ -182,11 +182,10 @@ let parksQuestions = [
 let parksAsk;
 
 function fiveQs() {
-   //parksAsk = prompt (parksQuestions[i]);
+   parksAsk = prompt(parksQuestions[i]);
   for (let i = 0; i < parksQuestions.length; i++) {
-    parksAsk = prompt(parksQuestions[i]);
     //let parksQuestion = parksQuestions[i].toLowerCase();
-    if (parksAsk.toLowerCase()=== parksQuestions[i]){
+    if (parksAsk.toLowerCase()=== parksAnswers[i]){
       alert ("Excellent guess!");
     } 
    
