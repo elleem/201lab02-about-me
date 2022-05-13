@@ -11,3 +11,4 @@
 <p> I also added in a word guess game, with 6 guesses. </p>
 <p> Finally you can get a score for participating. </p>
 
+- The app.js was edited by Daniel Brott, while being driven by Lauren Main on 5/10/2022.
